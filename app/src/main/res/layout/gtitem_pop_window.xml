@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:background="@mipmap/bg_kanzhe_btnbg_long"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/zan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_xq_zan" />
+
+         <ImageView
+             android:id="@+id/share_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/btn_xq_fenxiang"
+             android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:id="@+id/punlun_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:src="@mipmap/btn_xq_pinlun" />
+    </LinearLayout>
+</LinearLayout>

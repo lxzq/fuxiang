@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|bottom"
+        android:background="@color/action_bar_background_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/host1_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@mipmap/btn_kanzhe_fabu"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/host1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/bar_bnz"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/host1"
+            android:textColor="@drawable/tabbar_title_bg"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/host2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/bar_host_2"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/host2"
+            android:textColor="@drawable/tabbar_title_bg"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/host5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center|bottom"
+            android:paddingLeft="0dp"
+            android:paddingTop="32dp"
+            android:textColor="@drawable/tabbar_title_bg"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/host3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/bar_host_3"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/host3"
+            android:textColor="@drawable/tabbar_title_bg"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/host4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/bar_host_4"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/host4"
+            android:textColor="@drawable/tabbar_title_bg"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_host"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/tab_host"
+        android:layout_alignParentBottom="@id/tab_host"
+        android:background="#e1e2dd"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/tabbar_btn_qcsj" />
+
+    <ImageView
+        android:id="@+id/host4_tips"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignRight="@+id/tab_host"
+        android:layout_alignTop="@+id/tab_host"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/bb_hdxq_loucensz"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/host1_tips"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@+id/tab_host"
+        android:layout_alignTop="@+id/tab_host"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/bb_hdxq_loucensz"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcsh.fuxiang.ui.look.GrowthtreeDetailActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_action_bar_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/layout_listview" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/stroke_whitebg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:minHeight="49dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="9dp">
+
+            <ImageView
+                android:id="@+id/emoji_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/editText"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="2dp"
+                android:src="@mipmap/btn_biaoqing" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="评论"
+                android:inputType="none"
+                android:maxLines="3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/green_button"
+                    android:text="发送"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.qcsh.fuxiang.widget.EmojiView
+        android:id="@+id/emoji_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:numColumns="8"
+        android:cacheColorHint="@null"
+        android:scrollbars="none"/>
+</LinearLayout>

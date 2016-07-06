@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="85dp"
+    android:gravity="bottom"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/tabbarIcon"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tabbarTitle"
+            style="?android:attr/tabWidgetStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+             />
+
+       <TextView
+            android:id="@+id/msgNum"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:gravity="center"
+           
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+      <ImageView
+            android:id="@+id/tabbarLine"
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null" /> 
+
+    </RelativeLayout>
+
+</LinearLayout>

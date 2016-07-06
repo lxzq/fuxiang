@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/face"
+        android:src="@color/text_dark"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="张星星"
+        android:gravity="center"
+        android:id="@+id/child"
+        android:layout_marginLeft="10dp"
+        android:button="@null"
+        android:textColor="@drawable/bang_tab_bg_2"/>
+
+</LinearLayout>

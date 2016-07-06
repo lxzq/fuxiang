@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/libs/android-async-http-1.4.3.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/libs/universal-image-loader-1.9.4.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/libs/xUtils-2.6.14.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppContext.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppIntentManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/AppStart.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/adapter/GridViewAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/api/ApiClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/api/ApiConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/api/ApiResponseHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/api/ErrorMassage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/bean/BaseEntity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/bean/User.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/Action.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/AppCache.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/Constants.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/FileUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/ImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/MD5.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/MethodsCompat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/NetworkHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/StringUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/TimeZoneUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/UIHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/UpdateVersionManger.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/common/Utils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/ui/BaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/ui/BaseFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/widget/DragGridView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/widget/Loading.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/qcsh/fuxiang/widget/NoScrollGridView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/login_loading.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/spinner.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/loading_bg.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/alert_dialog_text.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/loading.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/start.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/update_progress.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_0.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_1.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_10.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_11.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_2.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_3.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_4.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_5.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_6.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_7.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_8.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/spinner_9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/messages.xml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

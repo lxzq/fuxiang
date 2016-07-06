@@ -1,0 +1,16 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@mipmap/btn_kanzhe_yuyin_normal1"
+        android:duration="500"/>
+    <item
+        android:drawable="@mipmap/btn_kanzhe_yuyin_normal2"
+        android:duration="500"/>
+    <item
+        android:drawable="@mipmap/btn_kanzhe_yuyin_normal3"
+        android:duration="500"/>
+    <item
+        android:drawable="@mipmap/btn_kanzhe_yuyin_normal4"
+        android:duration="500"/>
+</animation-list>

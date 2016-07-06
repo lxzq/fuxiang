@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <include layout="@layout/layout_action_bar_title"></include>
+
+    <com.qcsh.fuxiang.widget.JJBLiveView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/video_view">
+    </com.qcsh.fuxiang.widget.JJBLiveView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/live_title"
+        android:text="英弗英语教育"/>
+
+
+    <com.qcsh.fuxiang.widget.XListView
+        android:layout_width="match_parent"
+        style="@style/SimpleList"
+        android:id="@+id/comment_list"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    </com.qcsh.fuxiang.widget.XListView>
+
+</LinearLayout>

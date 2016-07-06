@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@mipmap/btn_shanchu"
+            android:layout_marginTop="5dp"
+            android:id="@+id/right_status"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/right_spinnerImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@anim/message_loading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试是是"
+            android:id="@+id/right_msg_text"
+            android:gravity="center"
+            android:maxWidth="200dp"
+            android:includeFontPadding="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/fenseduihuakuang"/>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/scan_mask"
+            android:adjustViewBounds="true"
+            android:id="@+id/right_msg_pic"
+            android:maxWidth="200dp"
+            android:visibility="gone"
+            android:background="@drawable/fenseduihuakuang"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_kanzhe_bofang"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:id="@+id/right_msg_video"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/btn_kanzhe_yy02"
+            android:text="15''"
+            android:gravity="center"
+            android:id="@+id/right_msg_audio"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/fenseduihuakuang"/>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fenseduihuakuang"
+            android:visibility="visible"
+            android:gravity="center_vertical|right"
+            android:id="@+id/right_msg_audio_anim_lin"
+            >
+
+        <ImageView
+            android:id="@+id/right_msg_audio_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@anim/message_right_audio"/>
+         </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/right_face"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_wojia_nan60dp02"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

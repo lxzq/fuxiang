@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <include layout="@layout/layout_action_bar_title"></include>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/scan_mask"
+        android:scaleType="centerCrop"
+        android:id="@+id/pic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="儿童手绘坊"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:textColor="@color/text_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/warning_color"
+            android:id="@+id/price"
+            android:textSize="17sp"
+            android:text="¥5/小时"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginAndpadding12"
+        android:layout_marginRight="@dimen/marginAndpadding12"
+        android:textSize="15sp"
+        android:id="@+id/content"
+        android:textColor="@color/text_medium"
+        android:text="开儿童乐园，厂家直营儿童乐园品牌，集儿童娱乐，健身，益智为一体。开儿童乐园，首创整店输出模式，负责安装设备，全程指导"
+        android:layout_marginTop="20dp"/>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="@null"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+        android:id="@+id/lives"></GridView>
+
+</LinearLayout>

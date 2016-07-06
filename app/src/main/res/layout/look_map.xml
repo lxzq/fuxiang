@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_action_bar_title"></include>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.amap.api.maps2d.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <RadioGroup
+        android:layout_width="60dp"
+        android:background="@null"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/marginAndpadding12"
+        android:id="@+id/menu"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/look_button_bg"
+            android:button="@null"
+            android:id="@+id/look"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/look_button_image"
+            android:textColor="@drawable/look_button_text_color"
+            android:text="看着"/>
+
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/look_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/look_child"
+            android:textColor="@drawable/look_button_text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:drawableTop="@drawable/look_button_image_2"
+            android:paddingTop="5dp"
+
+            android:text="带孩子"/>
+
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/look_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/look_friend"
+            android:textColor="@drawable/look_button_text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/look_button_image_3"
+
+            android:text="找伙伴"/>
+
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/look_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/notes"
+            android:textColor="@drawable/look_button_text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:paddingTop="5dp"
+
+            android:drawableTop="@drawable/look_button_image_4"
+            android:text="留言板"/>
+
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/look_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/grow_tree"
+            android:textColor="@drawable/look_button_text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/look_button_image_5"
+            android:visibility="gone"
+            android:text="成长树"/>
+    </RadioGroup>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/message_num"
+            android:textColor="@color/white"
+            android:text="1"
+            android:gravity="center"
+            android:layout_marginTop="262dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/look_button_tip"/>
+    </FrameLayout>
+</LinearLayout>

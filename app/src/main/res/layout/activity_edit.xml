@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/dividingline" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_dark"/>
+
+    <TextView
+        android:id="@+id/edit_tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="end"
+        android:paddingBottom="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12"
+        android:text="0"
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_dividingline_horizontal" />
+
+</LinearLayout>

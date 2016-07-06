@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qcsh.fuxiang.widget.JJBVideoView
+            android:id="@+id/live_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+         />
+        <ImageView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:background="@anim/spinner"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.1"
+            android:id="@+id/logo"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/logo"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b0000000"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:id="@+id/control"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/start"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:text="播放"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/stop"
+                android:visibility="visible"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="暂停"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="00:00"
+                android:textSize="15sp"
+                android:id="@+id/live_time"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/play_progressBar"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="100"
+                android:max="100"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/audio"
+                android:visibility="visible"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="音量"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/full"
+                android:visibility="visible"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="全屏"
+                />
+
+        </LinearLayout>
+
+        <com.qcsh.fuxiang.widget.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="70dp"
+            android:id="@+id/seek_bar"
+            android:visibility="gone"
+            android:background="@color/b0000000"
+            android:layout_marginBottom="50dp"/>
+
+    </FrameLayout>
+</LinearLayout>

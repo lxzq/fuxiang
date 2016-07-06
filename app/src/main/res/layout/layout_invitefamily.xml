@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/green_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/green_line"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/find_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="查找账号"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/ic_kanzhe_mm100"
+            android:drawablePadding="12sp"/>
+
+        <TextView
+            android:id="@+id/face2face"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="面对面"
+            android:drawableTop="@mipmap/ic_kanzhe_yyewm"
+            android:drawablePadding="12sp"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新用户"
+            android:drawableTop="@mipmap/ic_kanzhe_qtr"
+            android:drawablePadding="12sp"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/find_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/green_line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/btn_back_green"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:hint="输入昵称或手机号"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:background="@drawable/edittext_style_bg"/>
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/green_button"
+                android:layout_marginLeft="10dp"
+                android:text="搜索"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

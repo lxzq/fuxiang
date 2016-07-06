@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gtdetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="19dp"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12"
+        android:paddingTop="19dp"
+        android:text="宝宝第一次说话时录下的，非常珍贵"
+        android:textColor="@color/text_dark"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12">
+
+        <ImageView
+            android:id="@+id/gtdetail_face"
+            android:layout_width="40dp"
+            android:layout_height="37.5dp"
+            android:src="@mipmap/defalut_user_face" />
+
+        <TextView
+            android:id="@+id/gtdetail_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="妈妈"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gtdetail_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="8-30 11:00"
+            android:textColor="@color/text_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gtdetail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_add"
+            android:drawablePadding="5dp"
+            android:text="汇林阁小区"
+            android:textColor="@color/text_light"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12">
+
+        <include layout="@layout/layout_content_all" />
+
+        <TextView
+            android:id="@+id/images_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@mipmap/bg_kanzhe_right"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="3"
+            android:textColor="@color/text_dark"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+
+        <TextView
+            android:id="@+id/gtdetail_likecount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/btn_zan"
+            android:gravity="center"
+            android:text="300"
+            android:textColor="@color/text_medium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gtdetail_sharecount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/btn_shoucang"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/text_medium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gtdetail_commentcount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/btn_pinlun"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/text_medium"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginAndpadding12">
+
+        <TextView
+            android:id="@+id/gtdetail_zan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_kanzhe_zan"
+            android:drawablePadding="5dp"
+            android:text="小姨、爸爸2人赞了一下"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/gtdetail_morebtn"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_delete" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pinlun_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingLeft="@dimen/marginAndpadding12"
+            android:paddingRight="@dimen/marginAndpadding12"
+            android:paddingTop="12dp"
+            android:text="全部评论2条"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-2dp"
+            android:background="@color/dividingline" />
+    </LinearLayout>
+</LinearLayout>

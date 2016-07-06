@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@color/transparent</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/page_background</item>
+        <!-- 状态栏颜色-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <!--  <style name="ToolBarTheme" parent="@style/AppBaseTheme">
+          <item name="android:textColorPrimary">@color/f2f2f4</item>
+      </style>-->
+
+    <style name="SimpleList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <!--<item name="android:paddingBottom">26dp</item>-->
+        <item name="android:divider">@mipmap/divider_horizontal_timeline</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="NoDividerList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <!--<item name="android:paddingBottom">26dp</item>-->
+        <item name="android:divider">@null</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="SimpleAppStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <!-- popupWindows 动画 -->
+    <style name="PopupAnimationToast" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_middle_small2big</item>
+        <item name="android:windowExitAnimation">@anim/popup_middle_big2small</item>
+    </style>
+
+    <!--ToolBar两个tab选项卡的样式-->
+    <style name="ToolBarTabStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <!--ToolBar两个tab选项卡线的样式-->
+    <style name="ToolBarTabLineStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/title_tab_bg</item>
+    </style>
+
+    <style name="SearchEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:hint">@string/search_with_punctuation</item>
+        <item name="android:textColorHint">#b9b9b9</item>
+        <item name="android:textColor">#b9b9b9</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/sousuokuang</item>
+         <item name="android:textSize">14sp</item>
+    </style>
+
+
+</resources>

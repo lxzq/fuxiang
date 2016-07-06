@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+
+    <EditText
+        android:id="@+id/ic_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="输入手机号"
+        android:inputType="phone"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_medium"
+        android:textSize="15sp" />
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingline" />
+
+    <EditText
+        android:id="@+id/ic_psw"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_medium"
+        android:textSize="15sp" />
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/ic_key"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="输入验证码"
+            android:paddingLeft="12dp"
+            android:textColor="@color/text_medium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/send_key"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/green_button"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

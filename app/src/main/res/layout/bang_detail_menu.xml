@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_light"
+                    android:text="0"
+                    android:gravity="center"
+                    android:id="@+id/hit_num"
+                    android:drawableTop="@mipmap/btn_zan"
+                    android:drawablePadding="5dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_light"
+                    android:text="0"
+                    android:gravity="center"
+                    android:id="@+id/bb_num"
+                    android:drawableTop="@mipmap/btn_bb_dashang"
+                    android:drawablePadding="5dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_light"
+                    android:text="0"
+                    android:gravity="center"
+                    android:id="@+id/comment_num"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/btn_pinlun"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+</LinearLayout>

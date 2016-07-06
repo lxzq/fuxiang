@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcsh.fuxiang.ui.look.SubmitActivity">
+
+    <include layout="@layout/layout_action_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/submit_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="83dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="宝宝此刻在笑、在走路...还是..."
+                android:maxLines="5"
+                android:padding="@dimen/marginAndpadding12" />
+
+            <RadioGroup
+                android:id="@+id/submit_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp">
+
+                <RadioButton
+                    android:id="@+id/audio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:button="@drawable/look_audio_image" />
+
+                <RadioButton
+                    android:id="@+id/mood_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:button="@drawable/look_mood_image" />
+
+                <RadioButton
+                    android:id="@+id/first_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/look_first_image"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="第一次"
+                    android:textColor="@drawable/look_first_text_color"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <include layout="@layout/layout_dividingline_horizontal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/marginAndpadding12">
+
+                <TextView
+                    android:id="@+id/text_max9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="最多可添加9张"
+                    android:textColor="@color/text_light"
+                    android:textSize="12sp" />
+
+                <com.qcsh.fuxiang.widget.NoScrollGridView
+                    android:id="@+id/pictures_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/recordtime_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="@dimen/marginAndpadding12"
+                    android:paddingRight="@dimen/marginAndpadding12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="记录时间"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_light"/>
+
+                    <TextView
+                        android:id="@+id/recordtime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="2015-8-20"
+                        android:drawableRight="@mipmap/btn_jiantou"
+                        android:drawablePadding="8dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_light"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_dividingline_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="@dimen/marginAndpadding12"
+                    android:paddingRight="@dimen/marginAndpadding12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="地        址"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_light"/>
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="天鹅湖万达广场"
+                        android:background="@color/white"
+                        android:drawableRight="@mipmap/btn_jiantou"
+                        android:drawablePadding="8dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_light"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

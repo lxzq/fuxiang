@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/f2f2f4"
+    tools:context="com.qcsh.fuxiang.ui.share.ShareFragment">
+
+    <include layout="@layout/layout_toolbar_tab" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e1e2dd" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/share_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

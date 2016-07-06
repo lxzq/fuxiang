@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="短信邀请"
+        android:background="@drawable/choose_status_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/sms"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_dark"
+        android:drawableLeft="@mipmap/ic_kanzhe_yydx"
+        android:drawablePadding="15dp"
+        android:textSize="15sp"/>
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="二维码邀请"
+        android:background="@drawable/choose_status_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/ecode"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_dark"
+        android:drawableLeft="@mipmap/ic_kanzhe_yyewm"
+        android:drawablePadding="15dp"
+        android:textSize="15sp"/>
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="复制链接"
+        android:background="@drawable/choose_status_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/copy"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_dark"
+        android:drawableLeft="@mipmap/ic_kanzhe_yylj"
+        android:drawablePadding="15dp"
+        android:textSize="15sp"/>
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="更多邀请"
+        android:background="@drawable/choose_status_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/more"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_dark"
+        android:drawableLeft="@mipmap/ic_kanzhe_qtr"
+        android:drawablePadding="15dp"
+        android:textSize="15sp"/>
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+
+</LinearLayout>

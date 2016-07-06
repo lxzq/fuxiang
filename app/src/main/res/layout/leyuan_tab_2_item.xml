@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/marginAndpadding12"
+    android:paddingRight="@dimen/marginAndpadding12"
+    android:background="@drawable/choose_status_bg"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pic"
+            android:src="@mipmap/scan_mask"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:textColor="@color/text_dark"
+                android:text="儿童手绘坊"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes"
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="我老板不是一个喜欢讲价钱的人.我老板不是一个喜欢讲价钱的人.我老板不是一个喜欢讲价钱的人."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/warning_color"
+                    android:id="@+id/price"
+                    android:textSize="17sp"
+                    android:text="¥5/小时"/>
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:text="查看详情"
+                    android:id="@+id/button"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_selector_button_bg"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

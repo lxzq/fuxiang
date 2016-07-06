@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+<TextView 
+    android:id="@+id/dialog_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:textSize="15sp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:text=""
+    android:textColor="@color/white" 
+    />
+
+  <CheckBox android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/dis_vresion"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white" 
+            android:text="不在提示该版本"
+            android:layout_marginBottom="40dp"
+            android:background="@null"/>
+</LinearLayout>

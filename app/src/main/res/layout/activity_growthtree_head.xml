@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_kanzhe_czsbg">
+
+    <FrameLayout
+        android:id="@+id/childface_layout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/look_button">
+
+
+        <TextView
+            android:id="@+id/add_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加宝宝信息"
+            android:textColor="@color/front_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/ic_tjhzxx"/>
+
+        <ImageView
+            android:id="@+id/childimg"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:src="@mipmap/defalut_user_face"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/child_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/childface_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/childname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张星星"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/childage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="1岁260天"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/invite_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/childface_layout"
+        android:drawablePadding="6dp"
+        android:drawableTop="@mipmap/btn_kanzhe_yqjr"
+        android:text="邀请家人"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

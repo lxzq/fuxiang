@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:paddingLeft="@dimen/marginAndpadding12"
+    android:paddingRight="@dimen/marginAndpadding12"
+    android:background="@color/action_bar_background_color">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tabs"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="直播"
+            android:button="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:id="@+id/tab_1"
+            android:background="@drawable/action_bar_tab_selector"
+            android:textColor="@drawable/action_bar_tab_text_color_selector"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="项目"
+            android:button="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:id="@+id/tab_2"
+            android:background="@drawable/action_bar_tab_selector"
+            android:textColor="@drawable/action_bar_tab_text_color_selector"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="我的"
+            android:button="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:id="@+id/tab_3"
+            android:background="@drawable/action_bar_tab_selector"
+            android:textColor="@drawable/action_bar_tab_text_color_selector"
+            android:textSize="15sp"/>
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_address"
+        android:textColor="@color/text_dark"
+        android:background="@null"
+        android:text="利辛乐园"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:drawableRight="@mipmap/btn_kanzhe_arrow"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <EditText
+        android:id="@+id/ic_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/layout_toolbar_title"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:numeric="integer"
+        android:textColor="@color/text_medium"
+        android:background="@color/white"
+        android:hint="输入新密码"/>
+
+
+</LinearLayout>

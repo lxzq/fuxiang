@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcsh.fuxiang.ui.home.BindNumberActivity">
+
+    <include layout="@layout/layout_action_bar_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:paddingLeft="12sp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ic_wojia_shouji"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="手机账号"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/btn_jiantou"
+            android:gravity="center_vertical|right"
+            android:text="去绑定"
+            android:textColor="@color/text_medium"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:paddingLeft="12sp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ic_kanzhe_yyqq"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="QQ账号"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bind_qq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/btn_jiantou"
+            android:gravity="center_vertical|right"
+            android:text="去绑定"
+            android:textColor="@color/text_medium"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:paddingLeft="12sp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ic_kanzhe_yywx"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="微信账号"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bind_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/btn_jiantou"
+            android:gravity="center_vertical|right"
+            android:text="去绑定"
+            android:textColor="@color/text_medium"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:paddingLeft="12sp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ic_kanzhe_yyxl"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="微博账号"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bind_sinaweibo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/btn_jiantou"
+            android:gravity="center_vertical|right"
+            android:text="去绑定"
+            android:textColor="@color/text_medium"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal" />
+</LinearLayout>

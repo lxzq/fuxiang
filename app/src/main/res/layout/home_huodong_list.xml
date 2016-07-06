@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/iv_face"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_wojia_bbkj"/>
+
+            <TextView
+                android:id="@+id/ic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:text="嘟嘟嘴"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/ic_time"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:text="1天前 12:30"
+                android:textColor="@color/text_light"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_wojia_bb"/>
+
+        <TextView
+            android:id="@+id/ic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="为了盒子也要买这些饼干呀！"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

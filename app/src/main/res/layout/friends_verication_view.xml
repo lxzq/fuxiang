@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/face"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:padding="3dp"
+        android:background="@drawable/look_button"
+        android:src="@mipmap/btn_zan_selected"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickname"
+        android:text="张星星"
+        android:layout_gravity="center"
+        android:textColor="@color/text_dark"
+        android:layout_marginTop="19dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="请求加我"
+        android:layout_gravity="center"
+        android:id="@+id/notes"
+        android:textColor="@color/text_medium"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginAndpadding12"
+        android:paddingRight="@dimen/marginAndpadding12"
+        android:background="@null"
+        android:layout_height="wrap_content">
+
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/yes"
+            android:text="同意"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/green"
+            android:textSize="15sp"/>
+         <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="拒绝"
+                android:id="@+id/no"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:background="@color/warning_color"
+             />
+
+    </LinearLayout>
+</LinearLayout>

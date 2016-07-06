@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserGuideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="171dp"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="60dp"
+        android:background="@mipmap/table_btn_yingdao" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:button="@null"
+            android:checked="true" />
+        <!-- android:background="@drawable/pager_point"-->
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:button="@null" />
+
+    </RadioGroup>
+
+</FrameLayout>

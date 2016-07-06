@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:background="@mipmap/btn_wojia_nan60dp02" />
+        <TextView
+            android:id="@+id/ic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="张小丫"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="12dp"
+        android:text="邀请"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/green_selector_button_bg"/>
+
+</LinearLayout>

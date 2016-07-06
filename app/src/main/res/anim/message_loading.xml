@@ -1,0 +1,28 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz01"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz02"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz03"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz04"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz05"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz06"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz07"
+        android:duration="100"/>
+    <item
+        android:drawable="@mipmap/ic_kanzhe_jz08"
+        android:duration="100"/>
+</animation-list>

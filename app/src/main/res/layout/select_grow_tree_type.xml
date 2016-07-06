@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择发布类型"
+        android:textSize="10pt"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/text_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_video"
+            android:text="发视频"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/btn_kanzhe_fsp"
+            android:textColor="@color/text_dark"
+            android:background="@null"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_audio"
+            android:text="发语音"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/btn_kanzhe_fyy"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_photo"
+            android:text="发照片"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:background="@null"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/btn_kanzhe_fpic"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_mood"
+            android:text="发心情"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:drawableTop="@mipmap/btn_kanzhe_fxq"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_weight="1">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:src="@mipmap/btn_close"
+        android:background="@null"
+        android:layout_marginBottom="44dp"
+        android:id="@+id/close"
+        />
+    </LinearLayout>
+
+</LinearLayout>

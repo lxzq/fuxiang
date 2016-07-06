@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前看护人为"
+                android:textSize="15sp"
+                android:textColor="@color/text_dark"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/face_host"
+                android:src="@mipmap/scan_mask"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="妈妈"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text_host"
+                android:textColor="@color/front_color"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_wojia_jrgl" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_background">
+
+        <TextView
+            android:id="@+id/iv_yeye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="爷爷"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/iv_nainai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_yeye"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="奶奶"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/iv_waipuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="外婆"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/iv_waigon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_waipuo"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="外公"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_below="@id/iv_yeye"
+            android:layout_marginLeft="47dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="75dp"
+            android:layout_height="1px"
+            android:layout_below="@id/line1"
+            android:layout_toRightOf="@id/line1"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_below="@id/iv_nainai"
+            android:layout_toRightOf="@id/line2"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_below="@id/line2"
+            android:layout_marginLeft="85dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_waipuo"
+            android:layout_marginRight="47dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line6"
+            android:layout_width="75dp"
+            android:layout_height="1px"
+            android:layout_below="@id/line5"
+            android:layout_toLeftOf="@id/line5"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line7"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_below="@id/iv_waigon"
+            android:layout_toLeftOf="@id/line6"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line8"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line7"
+            android:layout_marginRight="85dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/iv_baba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line4"
+            android:layout_marginLeft="50dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:text="爸爸"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/iv_mama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line8"
+            android:layout_marginRight="50dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:text="妈妈"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/line9"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_below="@id/iv_baba"
+            android:layout_marginLeft="85dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line10"
+            android:layout_width="1px"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_mama"
+            android:layout_marginRight="85dp"
+            android:background="@color/dividingline" />
+
+        <TextView
+            android:id="@+id/line11"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_below="@+id/line9"
+            android:layout_toLeftOf="@id/line10"
+            android:layout_toRightOf="@id/line9"
+            android:background="@color/dividingline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line11"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/line12"
+                android:layout_width="1px"
+                android:layout_height="16dp"
+                android:layout_marginRight="35dp"
+                android:background="@color/dividingline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/child_list"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/iv_addbaby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:minWidth="70dp"
+                    android:drawablePadding="10dp"
+                    android:text="添加孩子"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

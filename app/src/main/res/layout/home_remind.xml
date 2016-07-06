@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_message"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="推送消息"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_message"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/layout_chat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_chat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="私聊"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_chat"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/text_medium"
+        android:textSize="12dp"
+        android:text="开启以下消息的提醒"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"/>
+
+   <!-- <LinearLayout
+        android:id="@+id/layout_addme"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_addme"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="有人加我"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_add"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>-->
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_comment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="有人评论我"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_comment"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/layout_praise"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_praise"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="有人赞我"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_praise"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/layout_noharass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ic_noharass"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="夜间防骚扰(23:00-8:00)"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.qcsh.fuxiang.widget.SwitchView
+            android:id="@+id/view_noharass"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

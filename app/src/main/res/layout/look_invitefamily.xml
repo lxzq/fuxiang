@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="52dp"
+        android:paddingBottom="40dp"
+        android:background="@color/white">
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inviteMother"
+            android:layout_weight="1"
+            android:background="@drawable/choose_status_bg"
+            android:drawableTop="@mipmap/ic_kanzhe_mm"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp"
+            android:drawablePadding="14sp"
+            android:text="邀请妈妈"
+            />
+
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/dividingline"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inviteFather"
+            android:layout_weight="1"
+            android:background="@drawable/choose_status_bg"
+            android:drawableTop="@mipmap/ic_kanzhe_bb"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp"
+            android:drawablePadding="14sp"
+            android:text="邀请爸爸"
+            />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/inviteAunt"
+        android:clickable="true"
+        android:layout_height="80dp"
+        android:background="@drawable/choose_status_bg"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/face"
+            android:src="@mipmap/defalut_user_face"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="妈妈"
+                android:id="@+id/nickname"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="创建者"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_medium"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+    <LinearLayout
+        android:id="@+id/inviteOther"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/choose_status_bg"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@mipmap/ic_kanzhe_qtr"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="邀请其他家属"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

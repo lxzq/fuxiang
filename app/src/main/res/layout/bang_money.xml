@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:id="@+id/message_panel"
+
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:hint="请输入金额"
+        android:maxLength="3"
+        android:inputType="number"
+        android:textColorHint="@color/b9b9b9"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/submit"
+        android:background="@drawable/green_button"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="打赏"/>
+    </LinearLayout>
+</LinearLayout>

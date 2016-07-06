@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tabs"
+        android:background="@color/white"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:id="@+id/tab_1"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@null"
+            android:textColor="@drawable/bang_tab_bg"
+            android:text="成长树"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:id="@+id/tab_2"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="@drawable/bang_tab_bg"
+            android:text="帮帮"/>
+
+       <!-- <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:id="@+id/tab_3"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="@drawable/bang_tab_bg"
+            android:text="活动"/>-->
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:id="@+id/tab_4"
+            android:background="@null"
+            android:textColor="@drawable/bang_tab_bg"
+            android:gravity="center"
+            android:text="晒晒"
+            android:checked="false" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:id="@+id/cursor"
+            android:scaleType="matrix"
+            android:background="@color/front_color"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

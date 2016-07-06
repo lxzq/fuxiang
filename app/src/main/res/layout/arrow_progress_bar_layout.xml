@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/progressLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ProgressBar
+
+            android:id="@+id/downloadProgressId"
+
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+
+            android:layout_alignParentBottom="true"
+
+            android:max="100"
+
+            android:progress="0"
+
+
+        />
+        <!--android:progressDrawable="@drawable/arrow_progress_bg"-->
+
+        <ImageView
+
+            android:id="@+id/arrowImgId"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:background="@mipmap/ic_launcher"
+
+            android:contentDescription="@string/app_name"
+
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!-- <TextView
+
+         android:id="@+id/progressTxtId"
+
+         android:layout_width="wrap_content"
+
+         android:layout_height="wrap_content"
+
+         android:layout_below="@id/progressLayoutId"
+
+         android:layout_centerHorizontal="true"
+
+         android:layout_marginTop="10.0dp"
+
+         android:background="@color/blue"
+
+         android:gravity="center"
+
+         android:textColor="@android:color/white"
+
+         android:textSize="30.0dp"
+
+         android:text="24"/>-->
+
+</RelativeLayout>

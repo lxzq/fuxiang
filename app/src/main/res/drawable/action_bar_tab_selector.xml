@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"  android:drawable="@drawable/action_bar_tab_true"></item>
+    <item android:state_checked="false" android:drawable="@drawable/action_bar_tab_false"></item>
+    <item android:drawable="@drawable/action_bar_tab_false"></item>
+</selector>

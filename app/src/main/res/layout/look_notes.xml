@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_panel"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="留言"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/btn_kanzhe_flyb"
+            android:id="@+id/menu_message"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp"
+            android:text="浇水"
+            android:id="@+id/menu_send"
+            android:drawableTop="@mipmap/btn_kanzhe_fczs"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_dividingline_horizontal"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:id="@+id/message_panel"
+        android:visibility="gone"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:hint="留言"
+        android:maxLength="30"
+        android:textColorHint="@color/b9b9b9"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/submit"
+        android:background="@drawable/green_button"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="发布"/>
+    </LinearLayout>
+</LinearLayout>

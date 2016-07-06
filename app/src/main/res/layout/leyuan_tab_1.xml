@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.qcsh.fuxiang.widget.PullToRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_view"
+        >
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="@null"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+        android:id="@+id/lives"></GridView>
+
+    </com.qcsh.fuxiang.widget.PullToRefreshView>
+</LinearLayout>

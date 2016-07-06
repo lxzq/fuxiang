@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qcsh.fuxiang.widget.DateTimePicker
+        android:id="@+id/mdatetime_picker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/surebtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:background="#E9E9E9"/>
+
+        <Button
+            android:id="@+id/cacelbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="15sp"
+            android:textColor="@color/text_dark"
+            android:background="#E9E9E9"/>
+    </LinearLayout>
+</LinearLayout>

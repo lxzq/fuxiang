@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/bg_login"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="37dp"
+            android:layout_marginLeft="37dp">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="手机号注册"
+                android:clickable="true"
+                android:textSize="15sp"
+                android:textColor="@color/text_dark"
+                android:layout_marginRight="22dp"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_height="40dp"
+                android:text="已有账号登录"
+                android:clickable="true"
+                android:textSize="15sp"
+                android:textColor="@color/text_dark"
+                android:layout_marginLeft="22dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/ic_leftline"
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_xt_or" />
+
+            <TextView
+                android:id="@+id/ic_rightline"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:id="@+id/sinaLogin"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@mipmap/btn_xt_sina"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/qqLogin"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_xt_qq"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/weixinLogin"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_xt_weixin"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

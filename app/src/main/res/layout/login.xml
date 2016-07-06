@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar_title"></include>
+
+    <RelativeLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="11dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/ic_xt_shouji"/>
+
+        <EditText
+            android:id="@+id/ic_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:phoneNumber="true"
+            android:hint="手机号"
+            android:textSize="15sp"
+            android:textColor="@color/text_medium"
+            android:layout_toRightOf="@id/iv_phone"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/iv_mm"
+            android:layout_width="11dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/ic_xt_mm"/>
+
+        <EditText
+            android:id="@+id/ic_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:textSize="15sp"
+            android:background="@color/transparent"
+            android:textColor="@color/text_medium"
+            android:layout_toRightOf="@id/iv_mm"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/green_selector_button_bg"
+        android:text="登录"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ic_fogetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:text="忘记密码?"/>
+
+
+
+
+
+
+</LinearLayout>
